@@ -17,6 +17,9 @@ From the [Releases](https://github.com/Kiro-404/kiro-pc/releases/latest) page:
 | **kiro-agent-0.1.0.vsix** | VS Code extension: chat plus real file and command execution | Anyone using VS Code |
 | **KiroPC.exe** | Standalone desktop app (23 MB) — run it directly, no install | Instant use |
 
+**Install from the VS Code Marketplace:**
+[Kiro — AI Coding Agent](https://marketplace.visualstudio.com/items?itemName=kiro-pc.kiro-agent) (`kiro-pc.kiro-agent`)
+
 ---
 
 ## ⚡ Up and running in two minutes
