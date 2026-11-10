@@ -4,7 +4,7 @@
 
 An AI coding agent that runs on your own API key (BYOK). A VS Code extension and a standalone desktop app.
 
-**Latest release: v0.1.0**
+**Latest release: v0.2.0**
 
 ---
 
@@ -14,7 +14,7 @@ From the [Releases](https://github.com/Kiro-404/kiro-pc/releases/latest) page:
 
 | File | What it is | Who it's for |
 |---|---|---|
-| **kiro-agent-0.1.0.vsix** | VS Code extension: chat plus real file and command execution | Anyone using VS Code |
+| **kiro-agent-0.2.0.vsix** | VS Code extension: chat plus real file and command execution | Anyone using VS Code |
 | **KiroPC.exe** | Standalone desktop app (23 MB) — run it directly, no install | Instant use |
 
 **Install from the VS Code Marketplace:**
@@ -26,11 +26,11 @@ From the [Releases](https://github.com/Kiro-404/kiro-pc/releases/latest) page:
 
 ### A) Inside VS Code
 
-1. Download `kiro-agent-0.1.0.vsix`.
+1. Download `kiro-agent-0.2.0.vsix`.
 2. Install it from the terminal:
 
    ```bash
-   code --install-extension kiro-agent-0.1.0.vsix --force
+   code --install-extension kiro-agent-0.2.0.vsix --force
    ```
 
    Or from VS Code: **Extensions ← ⋯ ← Install from VSIX…**
@@ -87,8 +87,8 @@ From the [Releases](https://github.com/Kiro-404/kiro-pc/releases/latest) page:
 ## 🔑 Verify file integrity (SHA-256)
 
 ```
-1cbab41cc6c2a07c466100fc16f46d231fd1c7a6a27d12f4ba3e983335f74109  kiro-agent-0.1.0.vsix
-58b0153313c2f3ebaec465de5ae37f6e5332bceb58b9b305ef0914fd2382782f  KiroPC.exe
+cfaa39917ca1690eea6f76b34c72bc63ec7ecf568388729c18ac6f3699db5cb3  kiro-agent-0.2.0.vsix
+9960f2ab8beded2c730785d1e4dd3e1eec49c85ced2b093710f0f67750bff1e6  KiroPC.exe
 ```
 
 On Windows:
