@@ -1,94 +1,94 @@
-<div dir="rtl" align="right">
+<div align="left">
 
 # Kiro Agent
 
-وكيل برمجة وتنفيذ مهام بالعربي — بيشتغل بمفتاحك الشخصي (BYOK). إضافة VS Code وتطبيق سطح مكتب مستقل.
+An AI coding agent that runs on your own API key (BYOK). A VS Code extension and a standalone desktop app.
 
-**آخر إصدار: v0.1.0**
+**Latest release: v0.1.0**
 
 ---
 
-## ⬇️ التحميل
+## ⬇️ Download
 
-من صفحة [Releases](https://github.com/Kiro-404/kiro-pc/releases/latest):
+From the [Releases](https://github.com/Kiro-404/kiro-pc/releases/latest) page:
 
-| الملف | إيه ده | لمين |
+| File | What it is | Who it's for |
 |---|---|---|
-| **kiro-agent-0.1.0.vsix** | إضافة VS Code: شات عربي RTL + تنفيذ حقيقي للملفات والأوامر | للي عنده VS Code |
-| **KiroPC.exe** | تطبيق سطح مكتب مستقل (23 MB) — شغّله مباشرة من غير تثبيت | تشغيل فوري |
+| **kiro-agent-0.1.0.vsix** | VS Code extension: chat plus real file and command execution | Anyone using VS Code |
+| **KiroPC.exe** | Standalone desktop app (23 MB) — run it directly, no install | Instant use |
 
 ---
 
-## ⚡ التشغيل في دقيقتين
+## ⚡ Up and running in two minutes
 
-### أ) جوه VS Code
+### A) Inside VS Code
 
-1. نزّل ملف `kiro-agent-0.1.0.vsix`.
-2. ثبّته من التيرمنال:
+1. Download `kiro-agent-0.1.0.vsix`.
+2. Install it from the terminal:
 
    ```bash
    code --install-extension kiro-agent-0.1.0.vsix --force
    ```
 
-   أو من VS Code: **Extensions ← ⋯ ← Install from VSIX…**
-3. افتح Kiro بـ `Ctrl+Alt+K` أو أيقونة K في شريط النشاط.
-4. من إعدادات الإضافة: اختار المزوّد والموديل، الصق مفتاحك، واضغط **اختبار الاتصال**.
+   Or from VS Code: **Extensions ← ⋯ ← Install from VSIX…**
+3. Open Kiro with `Ctrl+Alt+K` or the K icon in the activity bar.
+4. In the extension settings: pick a provider and model, paste your key, and click **Test connection**.
 
-### ب) تطبيق سطح المكتب
+### B) Desktop app
 
-1. نزّل `KiroPC.exe` وشغّله. لو ظهر تحذير SmartScreen: **More info ← Run anyway**.
-2. اضغط ⚙ **الإعدادات** ← اختار المزوّد ← اكتب اسم الموديل ← الصق المفتاح.
-3. اضغط **اختبار الاتصال**، وبعدها اكتب مهمتك واضغط إرسال.
+1. Download `KiroPC.exe` and run it. If SmartScreen appears: **More info ← Run anyway**.
+2. Open ⚙ **Settings** ← pick a provider ← enter the model name ← paste your key.
+3. Click **Test connection**, then describe your task and press send.
 
 ---
 
-## ✅ المتطلبات
+## ✅ Requirements
 
 - **Windows 10/11 (64-bit)**
-- **VS Code 1.90 أو أحدث** — لو هتستخدم الإضافة
-- **مفتاح API واحد** من مزوّد مدعوم:
-  `Google Gemini` · `Groq` · `OpenRouter` · `Ollama (محلي بدون مفتاح)` · وغيرها
-- مفيش حسابات عندنا ومفيش مفاتيح مضمّنة — المفتاح بتاعك وبيتخزن على جهازك.
+- **VS Code 1.90 or newer** — if you use the extension
+- **One API key** from a supported provider:
+  `Google Gemini` · `Groq` · `OpenRouter` · `Ollama (local, no key)` · and more
+- No accounts with us and no bundled keys — the key is yours and stays on your machine.
 
 ---
 
-## ✨ المزايا
+## ✨ Features
 
-- **شات عربي RTL** جوه VS Code: خطوات حية، موافقات، واختيار مزوّد/موديل.
-- **تنفيذ حقيقي**: قراءة/كتابة ملفات، طرفية، ومتصفح — مش نصوص بس.
-- **تنفيذ في الخلفية**: أولوية للأوامر وواجهات الـ API بدل تحكم الواجهة الهش.
-- **قواعد لكل مشروع** عبر `KIRO.md` أو `AGENTS.md` في أي مجلد.
-- **مهارات من GitHub**: نزّل `SKILL.md` واستخدمه من غير كتابة كود.
-- **MCP**: اربط أدوات خارجية (ملفات، قواعد بيانات، متصفح…).
-- **ذاكرة مشروع، Checkpoints، وعدّاد تكلفة/توكنز**.
-- **ثيم Kiro Dark** جاهز للإضافة.
-
----
-
-## 🔒 الأمان والخصوصية
-
-- المفاتيح بتتخزن محليًا على جهازك، والطلبات بتروح مباشرة للمزوّد اللي اخترته.
-- مفيش سيرفر وسيط تابع لنا، ومفيش تجميع لأي بيانات.
-- ملفات المفاتيح مستبعدة من الريبو والإصدارات.
+- **Agent chat inside VS Code**: live steps, approvals, and provider/model switching.
+- **Real execution**: read/write files, terminal, and browser — not just text.
+- **Background-first**: shell commands and APIs are preferred over fragile UI automation.
+- **Per-project rules** via `KIRO.md` or `AGENTS.md` in any folder.
+- **Skills from GitHub**: download a `SKILL.md` and use it without writing code.
+- **MCP**: connect external tools (files, databases, browsers…).
+- **Project memory, checkpoints, and cost/token counters**.
+- **Kiro Dark** theme included.
 
 ---
 
-## 🧾 الشروط
+## 🔒 Security and privacy
 
-- **الاستخدام مجاني** للاستخدام الشخصي والمهني.
-- **الكود المصدري مش منشور**: إعادة التوزيع أو البيع أو النشر على أنه منتجك غير مسموح من غير إذن كتابي.
-- البرنامج بيتقدّم «كما هو» من غير ضمانات.
+- Keys are stored locally on your machine, and requests go straight to the provider you choose.
+- No middle server of ours, and no data collection.
+- Key files are excluded from the repository and from releases.
 
 ---
 
-## 🔑 التحقق من سلامة الملفات (SHA-256)
+## 🧾 Terms
+
+- **Free to use** for personal and professional work.
+- **The source code is not published**: redistribution, resale, or republishing as your own product is not allowed without written permission.
+- The software is provided "as is", without warranty.
+
+---
+
+## 🔑 Verify file integrity (SHA-256)
 
 ```
-7a61e6ac0848be80c76e4d33ac350ad3dbce9dc65575489c59599359c917ce9c  kiro-agent-0.1.0.vsix
+1cbab41cc6c2a07c466100fc16f46d231fd1c7a6a27d12f4ba3e983335f74109  kiro-agent-0.1.0.vsix
 58b0153313c2f3ebaec465de5ae37f6e5332bceb58b9b305ef0914fd2382782f  KiroPC.exe
 ```
 
-في ويندوز:
+On Windows:
 
 ```powershell
 Get-FileHash .\KiroPC.exe -Algorithm SHA256
@@ -96,9 +96,9 @@ Get-FileHash .\KiroPC.exe -Algorithm SHA256
 
 ---
 
-## 💬 الدعم
+## 💬 Support
 
-- عندك مشكلة أو اقتراح؟ افتح [Issue](https://github.com/Kiro-404/kiro-pc/issues).
-- قبل ما تبلغ، جرّب **اختبار الاتصال** في الإعدادات للتأكد إن المفتاح شغّال.
+- Found a problem or have a suggestion? Open an [Issue](https://github.com/Kiro-404/kiro-pc/issues).
+- Before reporting, try **Test connection** in the settings to make sure your key works.
 
 </div>
